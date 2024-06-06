@@ -7,7 +7,7 @@ const CategoryProductDisplay = () => {
   return (
 
     <article
-      className="mx-6 md:mx-10 lg:mx-40 w-auto flex flex-col justify-center gap-8 items-center p-5 lg:flex-row"
+      className="mx-6 md:mx-10 lg:mx-40 w-auto flex flex-col justify-center gap-8 items-center p-5 md:mt-32 lg:flex-row"
     >
       <img
           src="assets\product-xx99-mark-two-headphones\desktop\image-category-page-preview.jpg"

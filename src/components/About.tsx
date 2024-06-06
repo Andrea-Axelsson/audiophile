@@ -1,5 +1,5 @@
-import bgMob from "/assets/shared/mobile/image-best-gear.jpg";
-import bgTab from "/assets/shared/tablet/image-best-gear.jpg";
+/* import bgMob from "/assets/shared/mobile/image-best-gear.jpg";
+import bgTab from "/assets/shared/tablet/image-best-gear.jpg"; */
 import bgDesk from "/assets/shared/desktop/image-best-gear.jpg";
 
 
@@ -7,7 +7,7 @@ import bgDesk from "/assets/shared/desktop/image-best-gear.jpg";
 const About = () => {
 
     return (
-      <article className="mx-6 md:mx-10 lg:mx-40 mt-9 w-auto flex flex-col lg:flex-row-reverse gap-6 my-28">
+      <article className="mx-6 md:mx-10 lg:mx-40 w-auto flex flex-col lg:flex-row-reverse gap-6 my-32">
         
         <img className="rounded-md shadow-md md:h-72 w-full lg:w-1/2 object-cover" src={bgDesk} alt="About image"/>
      

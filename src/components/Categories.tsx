@@ -5,7 +5,7 @@ import headphones from "/assets/shared/desktop/image-category-thumbnail-headphon
 const Categories = () => {
   return (
 
-<section className="w-auto flex flex-col md:flex-row justify-center items-center mx-6 md:mx-10 lg:mx-40 gap-6">
+<section className="w-auto flex flex-col md:flex-row justify-center items-center mx-6 md:mx-10 lg:mx-40 gap-6 mb-32">
 
 <section className="bg-secondary-200 h-40 w-full rounded-md p-8 mt-24 relative flex justify-end items-center text-center flex-col">
         <figure className="w-32 max-w-48 absolute bottom-20">

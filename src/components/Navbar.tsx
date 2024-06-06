@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <header className="bg-secondary-100 h-20 flex justify-center relative items-center lg:px-20">
+    <header className="bg-secondary-100 h-20 flex justify-center relative items-center px-6 md:px-10 lg:px-40 w-auto">
       <div className="flex justify-between items-center flex-grow px-4">
         <img className="block lg:hidden" src={Hamburger} alt="Hamburger menu"/>
         <Link
