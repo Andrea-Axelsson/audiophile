@@ -21,21 +21,21 @@ const Navbar = () => {
             HOME
           </Link>
           <Link
-            to={"category"}
+            to={"/category/headphones"}
             /* onClick={() => setCurrent("Headphones")} */
             className="hover:text-primary-100 cursor-pointer"
           >
             HEADPHONES
           </Link>
           <Link
-            to={"category"}
+            to={"/category/speakers"}
             /* onClick={() => setCurrent("Speakers")} */
             className="hover:text-primary-100 cursor-pointer"
           >
             SPEAKERS
           </Link>
           <Link
-            to={"category"}
+            to={"/category/earphones"}
             /* onClick={() => setCurrent("Earphones")} */
             className="hover:text-primary-100 cursor-pointer"
           >

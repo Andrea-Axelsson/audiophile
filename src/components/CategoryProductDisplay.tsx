@@ -1,9 +1,15 @@
 import Button from './Button'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import { useParams } from 'react-router-dom'
 
 /* Fixa rätt bilder för rätt storlek, då behöver du inte ha t.ex md:h-80  w-full på bilden*/
 
 const CategoryProductDisplay = () => {
+
+  const {categoryName} = useParams()
+  console.log("CATEGORY NAME", categoryName)
+
+
   return (
 
     <article
