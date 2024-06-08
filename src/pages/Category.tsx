@@ -1,16 +1,21 @@
+import React from 'react';
 import Categories from "../components/Categories"
 import CategoryProductDisplay from "../components/CategoryProductDisplay"
 import { useParams } from 'react-router-dom'
+import {Product} from '../utils/interfaces'
 import data from '../data.json'
+
+const ProductsData: Product[] = data as Product[];
 
 const Category: React.FC = () => {
 
 
   const categoryName = useParams<{categoryName?:string}>().categoryName || 'Default category'
 
-  const productData = data
 
-  const filterData = productData.filter(data => data.category === categoryName)
+  const filterData = ProductsData.filter(d => d.category === categoryName)
+
+  console.log("FILTER DaaaaaaaaaaaATA", filterData)
 
   return (
     <>
@@ -19,7 +24,7 @@ const Category: React.FC = () => {
         {categoryName ? categoryName.toUpperCase() : 'Default category'}
         </h1>
       </header>
-    <CategoryProductDisplay/>
+    <CategoryProductDisplay products={filterData}/>
     <Categories/>
     </>
   )
