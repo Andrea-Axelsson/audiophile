@@ -1,6 +1,7 @@
 import React from 'react';
 import Categories from "../components/Categories"
 import CategoryProductDisplay from "../components/CategoryProductDisplay"
+
 import { useParams } from 'react-router-dom'
 import {Product} from '../utils/interfaces'
 import data from '../data.json'

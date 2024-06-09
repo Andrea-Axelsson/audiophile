@@ -33,7 +33,7 @@ const CategoryProductDisplay:React.FC<CategoryProductDisplayProps> = ({products}
         {product.description}
         </h2>
 
-        <Link to="/product">
+        <Link to={`/product/${product.slug}`}>
             <Button variant="orange">
                 SEE PRODUCT
             </Button>

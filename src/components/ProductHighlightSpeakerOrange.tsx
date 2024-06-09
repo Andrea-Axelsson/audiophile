@@ -1,7 +1,8 @@
-import Button from "./Button";
+import Button from "./Button"
+import { Link } from "react-router-dom"
 
 
-const ProductHighlightSpeakerOrange: React.FC<staticProps> = ({ find }) => {
+const ProductHighlightSpeakerOrange = () => {
   return (
 
       <article className="mx-6 md:mx-10 lg:mx-40 w-auto mt-32 bg-primary-100 rounded-md h-auto lg:relative lg:overflow-hidden">
@@ -12,8 +13,6 @@ const ProductHighlightSpeakerOrange: React.FC<staticProps> = ({ find }) => {
               src="/assets/home/mobile/image-speaker-zx9.png"
             ></img>
 
-{/* TEXT */}
-
             <article className="flex flex-col justify-center items-center text-center lg:text-left lg:justify-start lg:items-start lg:pr-0 2xl:pr-40">
               <h1 className="text-white text-40 font-bold mb-6 md:text-56">
                 ZX9 <br></br> SPEAKER
@@ -22,9 +21,12 @@ const ProductHighlightSpeakerOrange: React.FC<staticProps> = ({ find }) => {
                 Upgrade to premium speakers that are <br></br> phenomenally built to
                 deliver truly <br></br> remarkable sound.
               </p>
-              <Button variant="black">
+              <Link to={"/product/zx9-speaker"}>
+                <Button variant="black">
                 SEE PRODUCT
                 </Button>
+              </Link>
+              
             </article>
 
 

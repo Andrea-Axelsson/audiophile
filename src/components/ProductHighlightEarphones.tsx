@@ -1,6 +1,7 @@
-import Button from "./Button";
+import Button from "./Button"
+import { Link } from "react-router-dom"
 
-const ProductHighlightEarphones: React.FC<staticProps> = ({ find }) => {
+const ProductHighlightEarphones = () => {
   return (
     <section className="mx-6 md:mx-10 lg:mx-40 mt-9 w-auto flex flex-wrap flex-col md:flex-row gap-6">
       <article className=" md:w-1/2 md:mb-0 flex-1">
@@ -15,9 +16,12 @@ const ProductHighlightEarphones: React.FC<staticProps> = ({ find }) => {
           <h1 className="text-black text-40 font-bold mb-6 lg:text-56">
             YX1 EARPHONES
           </h1>
+          <Link to={"/product/yx1-earphones"}>
           <Button variant="border">
                 SEE PRODUCT
             </Button>
+          </Link>
+          
         </article>
       </article>
     </section>

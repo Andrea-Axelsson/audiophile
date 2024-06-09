@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "/assets/shared/desktop/logo.svg";
 
 
-const Footer: React.FC<NavOptionsProps> = ({ setCurrent }) => {
+const Footer = () => {
   return (
     <footer className="bg-secondary-100 h-auto">
       <section className="px-12 md:px-40 pt-8">
@@ -18,22 +18,19 @@ const Footer: React.FC<NavOptionsProps> = ({ setCurrent }) => {
               Home
             </Link>
             <Link
-              to={"category"}
-              onClick={() => setCurrent("Headphones")}
+              to={"/category/headphones"}
               className="tracking-2 cursor-pointer hover:text-primary-100"
             >
               Headphones
             </Link>
             <Link
-              to={"category"}
-              onClick={() => setCurrent("Speakers")}
+              to={"/category/speakers"}
               className="tracking-2 cursor-pointer hover:text-primary-100"
             >
               Speakers
             </Link>
             <Link
-              to={"category"}
-              onClick={() => setCurrent("Earphones")}
+              to={"/category/earphones"}
               className="tracking-2 cursor-pointer hover:text-primary-100"
             >
               Earphones

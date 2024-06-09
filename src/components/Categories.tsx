@@ -1,6 +1,9 @@
-/* import { Link } from "react-router-dom"; */
+import { Link } from "react-router-dom";
 import Shopbutton from "./ShopButton"
 import headphones from "/assets/shared/desktop/image-category-thumbnail-headphones.png"
+import speakers from "/assets/shared/desktop/image-category-thumbnail-speakers.png"
+import earphones from "/assets/shared/desktop/image-category-thumbnail-earphones.png"
+
 
 const Categories = () => {
   return (
@@ -15,33 +18,40 @@ const Categories = () => {
             <h1 className="font-manrope font-bold text-[15px] tracking-1">
             HEADPHONES
             </h1>
+            <Link to={"/category/headphones"}>
             <Shopbutton/>
+            </Link>
+            
         </div>
         
     </section>
 
     <section className="bg-secondary-200 h-40 w-full rounded-md p-8 mt-24 relative flex justify-end items-center text-center flex-col">
         <figure className="w-32 max-w-48 absolute bottom-20">
-            <img src={headphones} alt="Productimg" />
+            <img src={speakers} alt="Productimg" />
         </figure>
         <div className="flex flex-col">
             <h1 className="font-manrope font-bold text-[15px] tracking-1">
-            HEADPHONES
+            SPEAKERS
             </h1>
+            <Link to={"/category/speakers"}>
             <Shopbutton/>
+            </Link>
         </div>
         
     </section>
 
     <section className="bg-secondary-200 h-40 w-full rounded-md p-8 mt-24 relative flex justify-end items-center text-center flex-col">
         <figure className="w-32 max-w-48 absolute bottom-20">
-            <img src={headphones} alt="Productimg" />
+            <img src={earphones} alt="Productimg" />
         </figure>
         <div className="flex flex-col">
             <h1 className="font-manrope font-bold text-[15px] tracking-1">
-            HEADPHONES
+            EARPHONES
             </h1>
+            <Link to={"/category/earphones"}>
             <Shopbutton/>
+            </Link>
         </div>
         
     </section>

@@ -1,6 +1,7 @@
-import Button from "./Button";
+import Button from "./Button"
+import { Link } from "react-router-dom"
 
-const ProductHighlightSpeakerGray: React.FC<staticProps> = ({ find }) => {
+const ProductHighlightSpeakerGray = () => {
   return (
     <section className="mx-6 md:mx-10 lg:mx-40 mt-9 w-auto">
       <article className='bg-[url("/assets/home/mobile/image-speaker-zx7.jpg")] md:bg-[url("/assets/home/tablet/image-speaker-zx7.jpg")] lg:bg-[url("/assets/home/desktop/image-speaker-zx7.jpg")] bg-cover bg-right h-96 flex items-center rounded-md'>
@@ -8,9 +9,12 @@ const ProductHighlightSpeakerGray: React.FC<staticProps> = ({ find }) => {
           <h1 className="text-black text-40 font-bold mb-6 md:text-56">
             ZX7 SPEAKER
           </h1>
-          <Button variant="border">
+          <Link to={"/product/zx7-speaker"}>
+            <Button variant="border">
                 SEE PRODUCT
             </Button>
+          </Link>
+          
         </article>
       </article>
     </section>

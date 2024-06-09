@@ -1,8 +1,16 @@
+import React from 'react'
 import {Link} from "react-router-dom"
 import Button from "./Button"
 import AddRemoveItem from "./AddRemoveItem"
+import { Product } from '../utils/interfaces'
 
-const ProductArticle = () => {
+interface ProductDisplayProps{
+  products: Product[];
+}
+
+
+const ProductArticle:React.FC<ProductDisplayProps>  = ({products}) => {
+
   return (
     <section className="mx-6 md:mx-10 lg:mx-40 w-auto my-6 md:mt-32 flex items-center">
         <article className="flex flex-col md:flex-row items-center">
@@ -15,25 +23,24 @@ const ProductArticle = () => {
             </Link>
             <img
               className="rounded-md min-w-72 w-auto object-cover"
-              src="assets\product-xx59-headphones\mobile\image-product.jpg"
+              src={products[0].image.mobile}
             ></img>
           </article>
 
           <article className="flex flex-col md:ml-16">
             <article className="flex flex-col justify-start items-start lg:text-left lg:justify-start lg:items-start">
-              {/* {text.new && (<p className="opacity-50 text-primary-100 text-14 tracking-10 my-6">
+              {products[0].new && (<p className="opacity-50 text-primary-100 text-14 tracking-10 my-6">
                 NEW PRODUCT
-              </p>)} */}
+              </p>)}
 
               <h1 className="text-black text-40 font-bold mb-6 md:text-56">
-                XX59
-                Headphones
+                {products[0].name}
               </h1>
               <p className="text-black text-15 leading-25 mb-6 w-full lg:w-[600px]">
-              Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.
+              {products[0].description}
               </p>
               <p className="text-black font-bold text-18 leading-25 mb-6">
-              $ 899
+              {`$ ${products[0].price}`}
               </p>
             </article>
 
