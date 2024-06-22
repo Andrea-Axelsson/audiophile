@@ -1,6 +1,16 @@
-import ButtonProps from '../utils/interfaces'
+import {ButtonProps} from '../utils/interfaces'
+/* import { clicked } from '../features/buttons/addPruductButtonSlice' */
+import { addItem } from '../features/cart/cartSlice'
+/* import { RootState } from '../app/store' */
+import { useDispatch } from 'react-redux'
 
-const Button: React.FC<ButtonProps> = ({variant, children}) => {
+
+const Button: React.FC<ButtonProps> = ({variant, children, product}) => {
+
+  /* const btnClick = useSelector((state: RootState) => state.addProductBtn.value) */
+  const dispatch = useDispatch()
+
+ /*  console.log("btnClick" ,btnClick) */
 
     const baseStyle = "py-4 px-5 font-bold tracking-1"
 
@@ -14,7 +24,16 @@ const Button: React.FC<ButtonProps> = ({variant, children}) => {
 
   return (
     <>
-        <button className={`${baseStyle} ${variantClasses}`}>
+    <p></p>
+        <button 
+        onClick={() => {
+          if(children === "ADD TO CART" && product){
+            dispatch(addItem(product))}
+          }
+        }
+        
+          className={`${baseStyle} ${variantClasses}`}
+          >
         {children}
       </button>
     </>

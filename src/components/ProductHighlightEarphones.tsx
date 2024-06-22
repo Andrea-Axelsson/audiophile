@@ -21,11 +21,10 @@ const ProductHighlightEarphones = () => {
                 SEE PRODUCT
             </Button>
           </Link>
-          
         </article>
       </article>
     </section>
-  );
-};
+  )
+}
 
 export default ProductHighlightEarphones;

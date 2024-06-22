@@ -18,7 +18,7 @@ const YouMayAlsoLike:React.FC<ProductDisplayProps> = ({products}) => {
       <section className='mx-6 md:mx-10 lg:mx-40 mt-9 w-auto flex flex-col lg:flex-row gap-6'>
       {youMayAlsoLikeArr.map((arr) => 
    
-        <section className="w-full py-6 flex flex-col justify-center items-center">
+        <section key={arr.slug} className="w-full py-6 flex flex-col justify-center items-center">
           <img
           className="rounded-md w-full object-contain mb-6"
           src={arr.image.mobile}
@@ -36,13 +36,9 @@ const YouMayAlsoLike:React.FC<ProductDisplayProps> = ({products}) => {
           
         </section>
         
-
       )}
       </section>
-      
     </>
-    
-    
   )
 }
 

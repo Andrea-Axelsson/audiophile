@@ -3,13 +3,30 @@ import {Link} from "react-router-dom"
 import Button from "./Button"
 import AddRemoveItem from "./AddRemoveItem"
 import { Product } from '../utils/interfaces'
+import { RootState } from "../app/store"
+import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import {increment, decrement} from '../features/counter/counterSlice'
+
 
 interface ProductDisplayProps{
   products: Product[];
 }
 
 
+
 const ProductArticle:React.FC<ProductDisplayProps>  = ({products}) => {
+  const counter = useSelector((state: RootState) => state.counter.value)
+
+  const dispatch = useDispatch()
+
+  const productToAdd = {
+    id: products[0].id,
+    name: products[0].name,
+    price: products[0].price,
+    image: products[0].image.mobile,
+    quantity: counter,
+  }
 
   return (
     <section className="mx-6 md:mx-10 lg:mx-40 w-auto my-6 md:mt-32 flex items-center">
@@ -45,9 +62,14 @@ const ProductArticle:React.FC<ProductDisplayProps>  = ({products}) => {
             </article>
 
             <article className="flex gap-6 justify-start items-center">
-              <AddRemoveItem/>
+              <AddRemoveItem
+              amount={counter}
+              onIncrement={() => dispatch(increment())}
+              onDecrement={() => dispatch(decrement())}
+              />
               <Button
               variant="orange"
+              product={productToAdd}
               >
                 ADD TO CART
               </Button>

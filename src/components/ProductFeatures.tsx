@@ -24,7 +24,7 @@ const ProductFeatures: React.FC<ProductDisplayProps> = ({products}) => {
             IN THE BOX
           </h1>
           {includesArr.map((arr) =>
-            <article className="md:ml-[20vw] lg:m-0">
+            <article key={arr.item} className="md:ml-[20vw] lg:m-0">
               <p className="text-black text-15 leading-25 mb-2 w-full">
                 <span className="text-primary-100 text-15 font-bold leading-25 mr-6">
                 {arr.quantity}

@@ -1,8 +1,14 @@
 import {ReactNode} from 'react'
 
 interface ButtonProps {
-    variant: 'orange' | 'black' | 'border'
-    children: ReactNode
+  variant: 'orange' | 'black' | 'border';
+  children: ReactNode;
+  product?: {
+      id: number;
+      name: string;
+      price: number;
+      image: string;
+  };
 }
 
 interface Product {

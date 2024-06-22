@@ -1,16 +1,24 @@
-const AddRemoveItem = () => {
+
+interface ButtonProps{
+  amount: number,
+  onIncrement: () => void
+  onDecrement: () => void
+}
+
+const AddRemoveItem:React.FC<ButtonProps> = ({amount, onIncrement, onDecrement}) => {
+
   return (
     <div className="flex">
-       {/* Button to decrement itemNumber. It's disabled when itemNumber is 0 or less */}
-      <button /* onClick={handleDecreaseQuantity} */ className="py-4 px-5 bg-secondary-200 text-14 tracking-1 font-bold text-gray-500 hover:bg-gray-400 hover:text-black">
+       
+      <button onClick={onDecrement} className="py-4 px-5 bg-secondary-200 text-14 tracking-1 font-bold text-gray-500 hover:bg-gray-400 hover:text-black">
         -
       </button>
-      {/* Display the current value of itemNumber */}
+     
       <div className="py-4 px-5 bg-secondary-200 text-14 tracking-1 font-bold text-gray-500">
-        0
+        {amount}
       </div>
-      {/* Button to increment itemNumber */}
-      <button /* onClick={handleAddToCart} */ className="py-4 px-5 bg-secondary-200 text-14 tracking-1 font-bold text-gray-500 hover:bg-gray-400 hover:text-black">
+      
+      <button onClick={onIncrement} className="py-4 px-5 bg-secondary-200 text-14 tracking-1 font-bold text-gray-500 hover:bg-gray-400 hover:text-black">
         +
       </button>
     </div>
