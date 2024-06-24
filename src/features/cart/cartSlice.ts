@@ -72,7 +72,7 @@ export const cartSlice = createSlice({
                 } else if (state.items[index].quantity === 1) {
                     state.totalQuantity -= 1;  
                     state.items.splice(index, 1);
-                    state.totalSum = 0; 
+                    state.totalSum -= 1; 
                 }
             }
         },
