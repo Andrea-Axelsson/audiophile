@@ -11,7 +11,6 @@ import { useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux"
 import { reset } from '../features/counter/counterSlice'
-/* import {resetClicked} from '../features/buttons/addPruductButtonSlice' */
 import { RootState } from "../app/store"
 
 const ProductsData: Product[] = data as Product[]
@@ -57,55 +56,3 @@ useEffect(() => {
 }
 
 export default ProductDetail
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-  const filteredProduct = filterData[0]
-
-  let cartProduct : {name:string, imageMobile: string, price: number, quantity : number} | undefined
-  
-  if(filteredProduct){
-
-    const {name, image, price} = filteredProduct
-
-    cartProduct = {name: name, imageMobile: image.mobile, price: price, quantity: counter}
-    
-  }
-
-  console.log("cartProduct", cartProduct)
-  
-
-  //Localstorage logic
-
-  const [productsArray, setProductsArray] = useState(() => JSON.parse(localStorage.getItem('products') || '[]'));
-
-  useEffect(() => {
-
-    if(clickedState){
-      const newProductsArray = [...productsArray, cartProduct]
-      setProductsArray(newProductsArray)
-      localStorage.setItem('products', JSON.stringify(newProductsArray))
-      dispatch(resetClicked())
-    }
-
-  }, [clickedState, dispatch])
-
-  console.log("PRODUCTS ARRAY" ,productsArray)
-
-*/

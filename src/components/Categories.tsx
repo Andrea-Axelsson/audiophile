@@ -3,9 +3,20 @@ import Shopbutton from "./ShopButton"
 import headphones from "/assets/shared/desktop/image-category-thumbnail-headphones.png"
 import speakers from "/assets/shared/desktop/image-category-thumbnail-speakers.png"
 import earphones from "/assets/shared/desktop/image-category-thumbnail-earphones.png"
+import { useDispatch } from "react-redux"
+
+import { clicked2 } from "../features/buttons/clickedStateSlice";
+
 
 
 const Categories = () => {
+
+  const dispatch = useDispatch()
+
+  const handleClick = () => {
+    dispatch(clicked2());
+  };
+
   return (
 
 <section className="w-auto flex flex-col md:flex-row justify-center items-center mx-6 md:mx-10 lg:mx-40 gap-6 mb-32">
@@ -18,7 +29,7 @@ const Categories = () => {
             <h1 className="font-manrope font-bold text-[15px] tracking-1">
             HEADPHONES
             </h1>
-            <Link to={"/category/headphones"}>
+            <Link to={"/category/headphones"} onClick={handleClick}>
             <Shopbutton/>
             </Link>
             
@@ -34,7 +45,7 @@ const Categories = () => {
             <h1 className="font-manrope font-bold text-[15px] tracking-1">
             SPEAKERS
             </h1>
-            <Link to={"/category/speakers"}>
+            <Link to={"/category/speakers"} onClick={handleClick}>
             <Shopbutton/>
             </Link>
         </div>
@@ -49,38 +60,13 @@ const Categories = () => {
             <h1 className="font-manrope font-bold text-[15px] tracking-1">
             EARPHONES
             </h1>
-            <Link to={"/category/earphones"}>
+            <Link to={"/category/earphones"} onClick={handleClick}>
             <Shopbutton/>
             </Link>
         </div>
         
     </section>
 </section>
-
-   
-
-   /*  <section className="w-full flex flex-col bg-white rounded-md justify-center items-center p-8 px-3 md:flex-row md:gap-4">
-      
-      <article className="relative h-60 w-full">
-    <figure className="w-32 max-w-48 absolute top-10">
-      <img src={headphones} alt="Productimg" />
-    </figure>
-    <section className="h-[30%]"></section>
-
-    <section className="rounded-md bg-secondary-200 h-40">
-      <section className="w-full h-full flex flex-col justify-end pb-2 items-center">
-        <h1 className="font-manrope font-bold text-[15px] tracking-1">
-          HEADPHONES
-        </h1>
-        <Shopbutton/>
-      </section>
-    </section>
-  </article>
-
-
-    </section> */
-
-
     
   )
 }

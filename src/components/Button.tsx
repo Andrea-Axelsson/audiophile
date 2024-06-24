@@ -1,5 +1,5 @@
 import {ButtonProps} from '../utils/interfaces'
-/* import { clicked } from '../features/buttons/addPruductButtonSlice' */
+/* import { clicked } from '../features/buttons/clickedStateSlice' */
 import { addItem } from '../features/cart/cartSlice'
 /* import { RootState } from '../app/store' */
 import { useDispatch } from 'react-redux'

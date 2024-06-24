@@ -71,7 +71,8 @@ export const cartSlice = createSlice({
                     state.totalSum -= state.items[index].price
                 } else if (state.items[index].quantity === 1) {
                     state.totalQuantity -= 1;  
-                    state.items.splice(index, 1); 
+                    state.items.splice(index, 1);
+                    state.totalSum = 0; 
                 }
             }
         },

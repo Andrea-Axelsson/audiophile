@@ -7,19 +7,20 @@ import ProductDetail from './pages/ProductDetail'
 
 
 
+
 function App() {
 
 
 
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout/>}>
-        <Route index element={<Home/>}/>
-        <Route path="category/:categoryName" element={<Category/>}/>
-        <Route path="product/:productName" element={<ProductDetail/>}/>
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="category/:categoryName" element={<Category/>}/>
+          <Route path="product/:productName" element={<ProductDetail/>}/>
+        </Route>
+      </Routes>
     </BrowserRouter>
 
       

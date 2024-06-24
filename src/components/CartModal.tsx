@@ -16,7 +16,7 @@ const Cart: React.FC = () => {
     
     return (
         <section className='flex justify-end'>
-            <article className='p-6 flex flex-col'>
+            <article className='p-6 flex flex-col min-w-64'>
                 <article className='flex justify-between'>
                     <p className='text-18 font-bold mb-6'>Cart ({totalQuant})</p>
                     <button onClick={() => dispatch(clearCart())} className='text-15 text-gray-500 mb-6 underline'>Remove all</button>
