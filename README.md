@@ -1,5 +1,7 @@
 # Audiophile
 
+![Project full size](audiophile.png)
+
 ## Innehållsförteckning
 
 - [Introduktion](#introduktion)
