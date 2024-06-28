@@ -1,6 +1,6 @@
 # Audiophile
 
-![Project full size](audiophile.png)
+![Project full size](public\assets\shared\audiophile.png)
 
 ## Innehållsförteckning
 
