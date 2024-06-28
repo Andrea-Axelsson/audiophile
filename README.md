@@ -120,12 +120,12 @@ Under utvecklingen av detta projekt har jag använt moderna verktyg och teknolog
 
 Genom detta projekt har jag fördjupat mina kunskaper inom:
 
-    React och dess ekosystem
-    State management med Redux Toolkit
-    Typning med TypeScript
-    Byggverktyg som Vite
-    Styling med Tailwind CSS
-    Animeringar med Framer Motion
+    -React och dess ekosystem
+    -State management med Redux Toolkit
+    -Typning med TypeScript
+    -Byggverktyg som Vite
+    -Styling med Tailwind CSS
+    -Animeringar med Framer Motion
 
 ## Fortsatt utveckling
 
