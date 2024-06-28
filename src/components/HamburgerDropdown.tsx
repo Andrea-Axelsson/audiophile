@@ -4,7 +4,7 @@ const HamburgerDropdown = () => {
   return (
     <section>
             
-        <Categories/>
+            <Categories isInsideHamburgerDropdown={true}/>
         
     </section>
   )

@@ -8,6 +8,7 @@ interface ButtonProps {
       name: string;
       price: number;
       image: string;
+      quantity: number;
   };
 }
 

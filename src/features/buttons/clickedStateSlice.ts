@@ -1,29 +1,41 @@
-import {createSlice} from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
-interface ClickState{
-    click1: boolean
-    click2: boolean
+/* Define the ClickState interface */
+interface ClickState {
+  clickCart: boolean
+  clickHamburger: boolean
+  clickThankYouModal: boolean
 }
 
+/* Set the initial state for ClickState */
 const initialState: ClickState = {
-    click1: false,
-    click2: false,
+  clickCart: false,
+  clickHamburger: false,
+  clickThankYouModal: false,
 }
 
+/* Create a slice for managing click states */
 export const clickSlice = createSlice({
-    name: 'addProductBtn',
-    initialState,
-    reducers:{
-        clicked1: (state) => {
-            state.click1 = !state.click1
-        },
-        clicked2: (state) => {
-            state.click2 = !state.click2
-        },
-        resetClicked: () => initialState,
-    }
-
+  name: 'clickedBtn',
+  initialState,
+  reducers: {
+    /* Toggle the clickCart state */
+    clickedCart: (state) => {
+      state.clickCart = !state.clickCart
+    },
+    /* Toggle the clickHamburger state */
+    clickedHamburger: (state) => {
+      state.clickHamburger = !state.clickHamburger
+    },
+    /* Toggle the clickThankYouModal state */
+    clickedThankToyModal: (state) => {
+      state.clickThankYouModal = !state.clickThankYouModal
+    },
+  }
 })
 
-export const {clicked1, clicked2, resetClicked} = clickSlice.actions
+/* Export the actions for use in components */
+export const { clickedCart, clickedHamburger, clickedThankToyModal } = clickSlice.actions
+
+/* Export the reducer to be included in the store */
 export default clickSlice.reducer

@@ -2,6 +2,7 @@ import AddRemoveItem from "./AddRemoveItem"
 import { useDispatch } from 'react-redux'
 import { incrementQuantity, decrementQuantity } from '../features/cart/cartSlice'
 
+/* Define the props for the CartItem component */
 interface ItemProps {
   item:{
     id: number,
@@ -9,12 +10,14 @@ interface ItemProps {
     image: string,
     price: number,
     quantity: number
-  }
+  },
+  isInsideCartModal: boolean
     
 }
 
-const CartItem: React.FC<ItemProps> = ({item}) => {
+const CartItem: React.FC<ItemProps> = ({item, isInsideCartModal}) => {
 
+/* Hook to get the dispatch function from Redux store */
   const dispatch = useDispatch()
 
   return (
@@ -30,14 +33,15 @@ const CartItem: React.FC<ItemProps> = ({item}) => {
                 </article>
         </article>
                 
-                
-                        {/* <p className='text-14 font-bold text-gray-500'>x 5</p> */}
-                        <AddRemoveItem
+                {!isInsideCartModal ? (
+                  <p className='text-14 font-bold text-gray-500'>x {item.quantity}</p>
+                ) : (
+                      <AddRemoveItem
                         amount={item.quantity}
                         onIncrement={() => dispatch(incrementQuantity(item.id))}
                         onDecrement={() => dispatch(decrementQuantity(item.id))}
                         />
-                
+                )}
             </article>
   )
 }

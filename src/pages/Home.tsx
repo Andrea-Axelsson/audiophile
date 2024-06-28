@@ -4,11 +4,13 @@ import ProductHighlightSpeakerOrange from '../components/ProductHighlightSpeaker
 import ProductHighlightSpeakerGray from '../components/ProductHighlightSpeakerGray'
 import ProductHighlightEarphones from '../components/ProductHighlightEarphones'
 
+
 const Home = () => {
+
   return (
     <>
       <Hero/>
-      <Categories/>
+      <Categories isInsideHamburgerDropdown={false}/>
       <ProductHighlightSpeakerOrange/>
       <ProductHighlightSpeakerGray/>
       <ProductHighlightEarphones/>
