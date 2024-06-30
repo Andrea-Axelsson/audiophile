@@ -1,8 +1,5 @@
 # Audiophile
 
-<!-- ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.png?raw=true)
- -->
-
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.gif?raw=true)
 
 ## Innehållsförteckning
@@ -141,6 +138,8 @@ To run this project locally, you need:
     -preview: Previews the built application.
 
 ## My Process
+
+![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/desktop-mockup.png?raw=true)
 
 ### Built with
 
