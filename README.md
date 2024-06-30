@@ -5,8 +5,6 @@
 
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.gif?raw=true)
 
-![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/mobile-mockup.png?raw=true)
-
 ## Innehållsförteckning
 
 - [Introduktion](#introduktion)
@@ -29,6 +27,8 @@
 ## Introduktion
 
 Audiophile är en e-handelswebbplats för ljudprodukter. Projektet använder React, Redux och TypeScript och är byggt med Vite.
+
+![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/mobile-mockup.png?raw=true)
 
 ## Förutsättningar
 
