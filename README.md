@@ -1,6 +1,6 @@
 # Audiophile
 
-![Project full size](https://github.com/Andrea-Axelsson/audiophile/raw/main/assets/shared/audiophile.png)
+![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.png?raw=true)
 
 ## Innehållsförteckning
 
