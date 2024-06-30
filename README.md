@@ -2,6 +2,8 @@
 
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.png?raw=true)
 
+![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.gif?raw=true)
+
 ## Innehållsförteckning
 
 - [Introduktion](#introduktion)
