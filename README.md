@@ -60,6 +60,8 @@ preview: Förhandsgranskar den byggda applikationen.
 
 ## Projektstruktur
 
+```bash
+
 audiophile/
 ├── public/
 ├── src/
@@ -100,6 +102,8 @@ audiophile/
 ├── package.json
 ├── tailwind.config.js
 └── tsconfig.json
+
+```
 
 ## Teknologier
 
