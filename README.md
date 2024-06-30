@@ -8,17 +8,16 @@
 ## Innehållsförteckning
 
 - [Overview](#overview)
-
   - [Introduction](#introduction)
   - [Live Demo](#live-demo)
   - [The Challenge](#the-challenge)
+  - [Project Structure](#project-structure)
+  - [Technologies](#technologies)
+- [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Scripts](#scripts)
-  - [Project Structure](#project-structure)
-  - [Technologies](#technologies)
-
 - [My Process](#my-process)
   - [What I learned](#what-i-learned)
   - [Future Development](#future-development)
@@ -43,47 +42,6 @@ Visitors should be able to:
 - Observe elements fading in and out of view dynamically as they scroll, thanks to the IntersectionObserver API combined with CSS animations.
 
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/mobile-mockup.png?raw=true)
-
-### Prerequisites
-
-To run this project locally, you need:
-
-- Node.js
-- npm eller yarn
-
-### Installation
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/ditt-repo-url.git
-   ```
-2. Navigate to the project directory:
-
-   ```bash
-   cd audiophile
-   ```
-
-3. Install the project dependencies:
-
-   ```bash
-
-   npm install
-
-   ```
-
-### Usage
-
-```
-    npm run dev
-
-```
-
-### Scripts
-
-    -dev: Starts the development server.
-    -build: Builds the project for production.
-    -lint: Runs ESLint to check code standards.
-    -preview: Previews the built application.
 
 ### Project Structure
 
@@ -140,6 +98,49 @@ audiophile/
     -Vite
     -Tailwind CSS
     -Framer Motion
+
+## Getting Started
+
+### Prerequisites
+
+To run this project locally, you need:
+
+- Node.js
+- npm eller yarn
+
+### Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/ditt-repo-url.git
+   ```
+2. Navigate to the project directory:
+
+   ```bash
+   cd audiophile
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+
+   npm install
+
+   ```
+
+### Usage
+
+```
+    npm run dev
+
+```
+
+### Scripts
+
+    -dev: Starts the development server.
+    -build: Builds the project for production.
+    -lint: Runs ESLint to check code standards.
+    -preview: Previews the built application.
 
 ## My Process
 
