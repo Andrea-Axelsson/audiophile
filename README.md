@@ -7,53 +7,63 @@
 
 ## Innehållsförteckning
 
-- [Live Demo](#live-demo)
-- [Introduktion](#introduktion)
-- [Förutsättningar](#förutsättningar)
-- [Installation](#installation)
-- [Användning](#användning)
-- [Scripts](#scripts)
-- [Projektstruktur](#projektstruktur)
-- [Teknologier](#teknologier)
-- [Bidrag](#bidrag)
-- [Licens](#licens)
-- [Översikt](#översikt)
-- [Min Process](#min-process)
-- [Vad jag lärde mig](#vad-jag-lärde-mig)
-- [Fortsatt utveckling](#fortsatt-utveckling)
-- [Användbara resurser](#användbara-resurser)
-- [Författare](#författare)
+- [Overview](#overview)
 
-## Live Demo
+  - [Introduction](#introduction)
+  - [Live Demo](#live-demo)
+  - [The Challenge](#the-challenge)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Scripts](#scripts)
+  - [Project Structure](#project-structure)
+  - [Technologies](#technologies)
+
+- [My Process](#my-process)
+  - [What I learned](#what-i-learned)
+  - [Future Development](#future-development)
+  - [Author](#author)
+
+## Overview
+
+### Introduction
+
+Audiophile is an e-commerce website for audio products. The project uses React, Redux, and TypeScript and is built with Vite.
+
+### Live Demo
 
 - Solution URL: [Audiophile](https://audiophile-andrea.netlify.app/)
 
-## Introduktion
+### The Challenge
 
-Audiophile är en e-handelswebbplats för ljudprodukter. Projektet använder React, Redux och TypeScript och är byggt med Vite.
+Visitors should be able to:
+
+- Navigate through the portfolio with ease, experiencing smooth transitions and animations.
+- View projects through a horizontally scrolling carousel, enhanced by the integration of Framer Motion.
+- Observe elements fading in and out of view dynamically as they scroll, thanks to the IntersectionObserver API combined with CSS animations.
 
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/mobile-mockup.png?raw=true)
 
-## Förutsättningar
+### Prerequisites
 
-För att köra detta projekt lokalt behöver du:
+To run this project locally, you need:
 
 - Node.js
 - npm eller yarn
 
-## Installation
+### Installation
 
-1. Klona repot:
+1. Clone the repo:
    ```bash
    git clone https://github.com/ditt-repo-url.git
    ```
-2. Navigera till projektmappen:
+2. Navigate to the project directory:
 
    ```bash
    cd audiophile
    ```
 
-3. Installera projektet
+3. Install the project dependencies:
 
    ```bash
 
@@ -61,21 +71,21 @@ För att köra detta projekt lokalt behöver du:
 
    ```
 
-## Användning
+### Usage
 
 ```
     npm run dev
 
 ```
 
-## Scripts
+### Scripts
 
-    -dev: Startar utvecklingsservern.
-    -build: Bygger projektet för produktion.
-    -lint: Kör ESLint för att kontrollera kodstandarder.
-    -preview: Förhandsgranskar den byggda applikationen.
+    -dev: Starts the development server.
+    -build: Builds the project for production.
+    -lint: Runs ESLint to check code standards.
+    -preview: Previews the built application.
 
-## Projektstruktur
+### Project Structure
 
 ```bash
 
@@ -122,7 +132,7 @@ audiophile/
 
 ```
 
-## Teknologier
+### Technologies
 
     -React
     -Redux Toolkit
@@ -131,26 +141,20 @@ audiophile/
     -Tailwind CSS
     -Framer Motion
 
-## Översikt
+## My Process
 
-Audiophile är en modern och responsiv webbapplikation för att köpa högkvalitativa ljudprodukter. Projektet är uppbyggt med fokus på prestanda och användarupplevelse.
+### What I Learned
 
-## Min Process
+Through this project, I deepened my knowledge in:
 
-Under utvecklingen av detta projekt har jag använt moderna verktyg och teknologier för att säkerställa en högkvalitativ och skalbar kodbas.
+    -React and its ecosystem
+    -State management with Redux Toolkit
+    -Typing with TypeScript
+    -Build tools like Vite
+    -Styling with Tailwind CSS
+    -Animations with Framer Motion
 
-## Vad jag lärde mig
-
-Genom detta projekt har jag fördjupat mina kunskaper inom:
-
-    -React och dess ekosystem
-    -State management med Redux Toolkit
-    -Typning med TypeScript
-    -Byggverktyg som Vite
-    -Styling med Tailwind CSS
-    -Animeringar med Framer Motion
-
-## Fortsatt utveckling
+### Future Development
 
 -React Documentation
 -Redux Toolkit Documentation
@@ -158,7 +162,7 @@ Genom detta projekt har jag fördjupat mina kunskaper inom:
 -Vite Documentation
 -Tailwind CSS Documentation
 
-## Författare
+### Author
 
 - GitHub - [Andrea Axelsson](https://github.com/Andrea-Axelsson)
 - LinkedIn - [Andrea Axelsson](https://www.linkedin.com/in/axelsson-andrea/)
