@@ -155,21 +155,21 @@ To run this project locally, you need:
 
 This project was a significant milestone in my development journey, providing me with deep insights into Redux, Tailwind CSS, and React Router. Here are some key learnings:
 
-    -Redux for Global State Management: Working extensively with Redux gave me a better understanding of managing global states efficiently. I realized how powerful and beneficial it is to have a single source of truth for state management in a complex application. Using Redux Toolkit streamlined the process of creating slices and actions, making the code more maintainable and easier to understand.
+Redux for Global State Management: Working extensively with Redux gave me a better understanding of managing global states efficiently. I realized how powerful and beneficial it is to have a single source of truth for state management in a complex application. Using Redux Toolkit streamlined the process of creating slices and actions, making the code more maintainable and easier to understand.
 
-    -First Project Using Tailwind CSS: This project marked my first experience with Tailwind CSS. I discovered the benefits of utility-first CSS, such as faster styling processes and more consistent designs. Tailwind's approach to styling allowed me to focus on building responsive and aesthetically pleasing interfaces without writing extensive custom CSS.
+First Project Using Tailwind CSS: This project marked my first experience with Tailwind CSS. I discovered the benefits of utility-first CSS, such as faster styling processes and more consistent designs. Tailwind's approach to styling allowed me to focus on building responsive and aesthetically pleasing interfaces without writing extensive custom CSS.
 
-    -React Router for SPA: Implementing React Router provided me with a solid understanding of creating Single Page Applications (SPA). I learned how to set up dynamic routing, manage navigation, and ensure good performance across the site. React Router enabled a seamless user experience, with efficient page transitions and a clean URL structure.
+React Router for SPA: Implementing React Router provided me with a solid understanding of creating Single Page Applications (SPA). I learned how to set up dynamic routing, manage navigation, and ensure good performance across the site. React Router enabled a seamless user experience, with efficient page transitions and a clean URL structure.
 
-    Overall, this project enhanced my skills in modern web development practices, making me more proficient in creating scalable and maintainable applications.
+Overall, this project enhanced my skills in modern web development practices, making me more proficient in creating scalable and maintainable applications.
 
 ### Future Development
 
 In future iterations of this project, I aim to implement several enhancements to improve functionality and user experience:
 
-    -Form Validations: I plan to add comprehensive form validations during the checkout process. This will ensure that users receive immediate feedback if any fields are missed or incorrectly filled out, enhancing the overall user experience and reducing the likelihood of errors during checkout.
+Form Validations: I plan to add comprehensive form validations during the checkout process. This will ensure that users receive immediate feedback if any fields are missed or incorrectly filled out, enhancing the overall user experience and reducing the likelihood of errors during checkout.
 
-    -Fullstack Integration with Database: I intend to transition from using a global Redux state for cart management to a fullstack approach that integrates with a database. By doing this, I can maintain the state of the cart even after the browser is refreshed, providing a more robust and persistent shopping experience for users. This change will also allow for better data management and tracking across user sessions.
+Fullstack Integration with Database: I intend to transition from using a global Redux state for cart management to a fullstack approach that integrates with a database. By doing this, I can maintain the state of the cart even after the browser is refreshed, providing a more robust and persistent shopping experience for users. This change will also allow for better data management and tracking across user sessions.
 
 ### Author
 
