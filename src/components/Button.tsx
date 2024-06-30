@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({ variant, children, product }) => {
   const dispatch = useDispatch()
 
   /* Base styles for the button */
-  const baseStyle = "py-4 px-5 font-bold tracking-1 transition duration-300"
+  const baseStyle = "py-4 text-xs px-5 font-bold tracking-1 transition duration-300"
 
   /* Different style variants for the button */
   const variants = {

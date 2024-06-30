@@ -14,7 +14,7 @@ const CategoryProductDisplay:React.FC<CategoryProductDisplayProps> = ({products}
     <>
     {products.map((product, index) => (
   <article key={product.id}
-  className={`mx-6 md:mx-10 lg:mx-40 w-auto flex flex-col justify-center gap-8 items-center md:mt-32 lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
+  className={`mx-6 md:mx-10 lg:mx-40 w-auto flex flex-col justify-center gap-8 items-center my-6 md:mt-32 lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}
     >
       <figure className="rounded-md lg:flex-1 lg:h-full w-full bg-center flex justify-center items-center bg-cover bg-no-repeat bg-secondary-200 md:h-60">
       <img

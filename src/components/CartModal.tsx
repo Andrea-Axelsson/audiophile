@@ -21,7 +21,7 @@ const Cart: React.FC = () => {
     const totSum = useSelector((state: RootState) => state.cart.totalSum)
 
     return (
-        <section className='flex justify-end'>
+        <section className='flex justify-end '>
             <article className='p-6 flex flex-col min-w-64'>
                 <article className='flex justify-between'>
                     <p className='text-18 font-bold mb-6'>Cart ({totalQuant})</p>

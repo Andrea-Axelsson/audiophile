@@ -2,7 +2,7 @@
 
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/audiophile.gif?raw=true)
 
-## Innehållsförteckning
+## Table of Contents
 
 - [Overview](#overview)
   - [Introduction](#introduction)

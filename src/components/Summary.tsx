@@ -11,7 +11,7 @@ const Summary = () => {
   const dispatch = useDispatch()
 
   return (
-    <section className="rounded-md h-full w-full mx-6 mb-6 lg:my-0 bg-white">
+    <section className="rounded-md h-full w-full mx-6 my-6 lg:my-0 bg-white">
       <article className='p-6 flex flex-col'>
         <article className='flex justify-between'>
           <p className='text-18 font-bold mb-6'>Summary</p>

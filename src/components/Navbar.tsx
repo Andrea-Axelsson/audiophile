@@ -34,7 +34,7 @@ const Navbar = () => {
               onClick={() => dispatch(clickedCart())}
             />
             <motion.div
-              className="bg-white absolute right-4 top-20 rounded-md z-20"
+              className="bg-white absolute right-4 top-20 rounded-md ml-4 z-20"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
