@@ -59,11 +59,10 @@ För att köra detta projekt lokalt behöver du:
 
 ## Användning
 
-    ```bash
+```
+npm run dev
 
-    npm run dev
-
-    ```
+```
 
 ## Scripts
 
