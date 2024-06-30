@@ -7,6 +7,7 @@
 
 ## Innehållsförteckning
 
+- [Live Demo](#live-demo)
 - [Introduktion](#introduktion)
 - [Förutsättningar](#förutsättningar)
 - [Installation](#installation)
@@ -17,12 +18,15 @@
 - [Bidrag](#bidrag)
 - [Licens](#licens)
 - [Översikt](#översikt)
-- [Länkar](#länkar)
 - [Min Process](#min-process)
 - [Vad jag lärde mig](#vad-jag-lärde-mig)
 - [Fortsatt utveckling](#fortsatt-utveckling)
 - [Användbara resurser](#användbara-resurser)
 - [Författare](#författare)
+
+## Live Demo
+
+    - Solution URL: [Netlify](https://audiophile-andrea.netlify.app/)
 
 ## Introduktion
 
@@ -130,11 +134,6 @@ audiophile/
 ## Översikt
 
 Audiophile är en modern och responsiv webbapplikation för att köpa högkvalitativa ljudprodukter. Projektet är uppbyggt med fokus på prestanda och användarupplevelse.
-
-## Länkar
-
-    -Live Demo
-    -Repository
 
 ## Min Process
 
