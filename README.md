@@ -60,7 +60,7 @@ För att köra detta projekt lokalt behöver du:
 ## Användning
 
 ```
-npm run dev
+    npm run dev
 
 ```
 
