@@ -12,13 +12,13 @@
   - [Live Demo](#live-demo)
   - [The Challenge](#the-challenge)
   - [Project Structure](#project-structure)
-  - [Technologies](#technologies)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Scripts](#scripts)
 - [My Process](#my-process)
+  - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Future Development](#future-development)
   - [Author](#author)
@@ -27,7 +27,7 @@
 
 ### Introduction
 
-Audiophile is an e-commerce website for audio products. The project uses React, Redux, and TypeScript and is built with Vite.
+This is a solution to the [Frontend Mentor - Audiophile app](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### Live Demo
 
@@ -35,11 +35,18 @@ Audiophile is an e-commerce website for audio products. The project uses React, 
 
 ### The Challenge
 
-Visitors should be able to:
+Users should be able to:
 
-- Navigate through the portfolio with ease, experiencing smooth transitions and animations.
-- View projects through a horizontally scrolling carousel, enhanced by the integration of Framer Motion.
-- Observe elements fading in and out of view dynamically as they scroll, thanks to the IntersectionObserver API combined with CSS animations.
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Add/Remove products from the cart
+- Edit product quantities in the cart
+- Fill in all fields in the checkout
+- Receive form validations if fields are missed or incorrect during checkout
+- See correct checkout totals depending on the products in the cart
+  - Shipping always adds $50 to the order
+  - VAT is calculated as 20% of the product total, excluding shipping
+- See an order confirmation modal after checking out with an order summary
 
 ![Project full size](https://github.com/Andrea-Axelsson/audiophile/blob/main/public/assets/shared/mobile-mockup.png?raw=true)
 
@@ -90,15 +97,6 @@ audiophile/
 
 ```
 
-### Technologies
-
-    -React
-    -Redux Toolkit
-    -TypeScript
-    -Vite
-    -Tailwind CSS
-    -Framer Motion
-
 ## Getting Started
 
 ### Prerequisites
@@ -144,24 +142,34 @@ To run this project locally, you need:
 
 ## My Process
 
+### Built with
+
+    -React
+    -Redux Toolkit
+    -TypeScript
+    -Vite
+    -Tailwind CSS
+    -Framer Motion
+
 ### What I Learned
 
-Through this project, I deepened my knowledge in:
+This project was a significant milestone in my development journey, providing me with deep insights into Redux, Tailwind CSS, and React Router. Here are some key learnings:
 
-    -React and its ecosystem
-    -State management with Redux Toolkit
-    -Typing with TypeScript
-    -Build tools like Vite
-    -Styling with Tailwind CSS
-    -Animations with Framer Motion
+    -Redux for Global State Management: Working extensively with Redux gave me a better understanding of managing global states efficiently. I realized how powerful and beneficial it is to have a single source of truth for state management in a complex application. Using Redux Toolkit streamlined the process of creating slices and actions, making the code more maintainable and easier to understand.
+
+    -First Project Using Tailwind CSS: This project marked my first experience with Tailwind CSS. I discovered the benefits of utility-first CSS, such as faster styling processes and more consistent designs. Tailwind's approach to styling allowed me to focus on building responsive and aesthetically pleasing interfaces without writing extensive custom CSS.
+
+    -React Router for SPA: Implementing React Router provided me with a solid understanding of creating Single Page Applications (SPA). I learned how to set up dynamic routing, manage navigation, and ensure good performance across the site. React Router enabled a seamless user experience, with efficient page transitions and a clean URL structure.
+
+    Overall, this project enhanced my skills in modern web development practices, making me more proficient in creating scalable and maintainable applications.
 
 ### Future Development
 
--React Documentation
--Redux Toolkit Documentation
--TypeScript Documentation
--Vite Documentation
--Tailwind CSS Documentation
+In future iterations of this project, I aim to implement several enhancements to improve functionality and user experience:
+
+    -Form Validations: I plan to add comprehensive form validations during the checkout process. This will ensure that users receive immediate feedback if any fields are missed or incorrectly filled out, enhancing the overall user experience and reducing the likelihood of errors during checkout.
+
+    -Fullstack Integration with Database: I intend to transition from using a global Redux state for cart management to a fullstack approach that integrates with a database. By doing this, I can maintain the state of the cart even after the browser is refreshed, providing a more robust and persistent shopping experience for users. This change will also allow for better data management and tracking across user sessions.
 
 ### Author
 
