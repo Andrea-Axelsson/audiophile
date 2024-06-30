@@ -44,19 +44,33 @@ För att köra detta projekt lokalt behöver du:
    git clone https://github.com/ditt-repo-url.git
    ```
 2. Navigera till projektmappen:
+
+   ```bash
    cd audiophile
-3. npm install
+   ```
+
+3. Installera projektet
+
+   ```bash
+
+   npm install
+
+   ```
 
 ## Användning
 
+    ```bash
+
     npm run dev
+
+    ```
 
 ## Scripts
 
-dev: Startar utvecklingsservern.
-build: Bygger projektet för produktion.
-lint: Kör ESLint för att kontrollera kodstandarder.
-preview: Förhandsgranskar den byggda applikationen.
+    -dev: Startar utvecklingsservern.
+    -build: Bygger projektet för produktion.
+    -lint: Kör ESLint för att kontrollera kodstandarder.
+    -preview: Förhandsgranskar den byggda applikationen.
 
 ## Projektstruktur
 
@@ -107,12 +121,12 @@ audiophile/
 
 ## Teknologier
 
-React
-Redux Toolkit
-TypeScript
-Vite
-Tailwind CSS
-Framer Motion
+    -React
+    -Redux Toolkit
+    -TypeScript
+    -Vite
+    -Tailwind CSS
+    -Framer Motion
 
 ## Översikt
 
@@ -120,8 +134,8 @@ Audiophile är en modern och responsiv webbapplikation för att köpa högkvalit
 
 ## Länkar
 
-Live Demo
-Repository
+    -Live Demo
+    -Repository
 
 ## Min Process
 
@@ -140,12 +154,13 @@ Genom detta projekt har jag fördjupat mina kunskaper inom:
 
 ## Fortsatt utveckling
 
-React Documentation
-Redux Toolkit Documentation
-TypeScript Documentation
-Vite Documentation
-Tailwind CSS Documentation
+-React Documentation
+-Redux Toolkit Documentation
+-TypeScript Documentation
+-Vite Documentation
+-Tailwind CSS Documentation
 
 ## Författare
 
-Ditt Namn - GitHub Profil
+- GitHub - [Andrea Axelsson](https://github.com/Andrea-Axelsson)
+- LinkedIn - [Andrea Axelsson](https://www.linkedin.com/in/axelsson-andrea/)
