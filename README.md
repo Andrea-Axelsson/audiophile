@@ -26,7 +26,7 @@
 
 ## Live Demo
 
-    - Solution URL: [Netlify](https://audiophile-andrea.netlify.app/)
+- Solution URL: [Netlify](https://audiophile-andrea.netlify.app/)
 
 ## Introduktion
 
