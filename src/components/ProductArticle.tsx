@@ -10,9 +10,10 @@ import { increment, decrement } from '../features/counter/counterSlice'
 /* Define the props for the ProductArticle component */
 interface ProductDisplayProps {
   products: Product[];
+  isInsideCartModal:boolean,
 }
 
-const ProductArticle: React.FC<ProductDisplayProps> = ({ products }) => {
+const ProductArticle: React.FC<ProductDisplayProps> = ({ products, isInsideCartModal }) => {
   /* Get the current counter value from Redux store */
   const counter = useSelector((state: RootState) => state.counter.value)
 
@@ -69,6 +70,7 @@ const ProductArticle: React.FC<ProductDisplayProps> = ({ products }) => {
           {/* Add/Remove item and Add to Cart button section */}
           <article className="flex gap-6 justify-start items-center">
             <AddRemoveItem
+              isInsideCartModal={false}
               amount={counter}
               onIncrement={() => dispatch(increment())}
               onDecrement={() => dispatch(decrement())}

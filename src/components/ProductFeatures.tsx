@@ -19,12 +19,12 @@ const ProductFeatures: React.FC<ProductDisplayProps> = ({products}) => {
           {products[0].features}
           </p>
         </article>
-        <article className="mt-20 flex flex-col md:flex-row lg:flex-col">
+        <article className="mt-20 flex flex-col lg:flex-col">
           <h1 className="text-black text-24 font-bold mb-6 md:text-32">
             IN THE BOX
           </h1>
           {includesArr.map((arr) =>
-            <article key={arr.item} className="md:ml-[20vw] lg:m-0">
+            <article key={arr.item} className="lg:m-0">
               <p className="text-black text-15 leading-25 mb-2 w-full">
                 <span className="text-primary-100 text-15 font-bold leading-25 mr-6">
                 {arr.quantity}

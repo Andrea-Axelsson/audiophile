@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between">
           {/* Copyright notice */}
           <p className="text-white font-bold text-15 text-center opacity-50 leading-25 pb-12">
-            Copyright 2021. All Rights Reserved
+          © 2024 Andrea Axelsson
           </p>
 
           {/* Social media icons */}

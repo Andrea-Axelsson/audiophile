@@ -37,6 +37,7 @@ const CartItem: React.FC<ItemProps> = ({item, isInsideCartModal}) => {
                   <p className='text-14 font-bold text-gray-500'>x {item.quantity}</p>
                 ) : (
                       <AddRemoveItem
+                      isInsideCartModal={isInsideCartModal}
                         amount={item.quantity}
                         onIncrement={() => dispatch(incrementQuantity(item.id))}
                         onDecrement={() => dispatch(decrementQuantity(item.id))}
